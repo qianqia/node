@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css" />
+  </head>
+  <body>
+  	<div class="head wrap">
+  		<div class="headLeft fl">
+  			<a href="###">
+  				<img src="/images/h_hlogopng.jpg" alt="" />
+  			</a>
+  		</div>
+  		<div class="headMiddle fl">
+  			<img src="/images/title.gif" />
+  		</div>
+  		<div class="fr headRight">
+  			<div class="fl shar">
+  				<a href="http://www.jiathis.com/share?uid=2042345"style="background: url(/images/shares_pr.png);display: block;" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+  				<script type="text/javascript">
+						var jiathis_config = {data_track_clickback:'true'};
+					</script>
+					<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=2042345" charset="utf-8"></script>
+					<script type="text/javascript" src="http://v3.jiathis.com/code/plugin.client.js" charset="utf-8"></script>
+  			</div>
+  			<div class="fr login">
+  				<% if(!user){ %>
+  				<div class="btn">
+			    	<button onclick="location.href='/form'" class="fl ">注册 / </button>
+			    	<button onclick="location.href='/login'" class="fl">登陆</button>
+			  	</div>
+	    <% }else{ %>
+	    	<div class="btn">
+		    	<button onclick="location.href='/quit'" class="fl">退出 / </button>
+		    	<button onclick="location.href='/message'" class="fl ">留言</button>
+		    </div>
+	    <% } %>
+  			</div>
+  		</div>
+  	</div>
+	  	<div class="nav1 wrap">
+	  		<!--<div class="fl html"><a href="###">html结构</a></div>
+	  		<div class="fl css"><a href="###">css样式</a></div>
+	  		<div class="fl js"><a href="###">javascript</a></div>
+	  		<div class="fl frame"><a href="###">框架</a></div>
+	  		<div class="fl frame"><a href="###">版本控制系统</a></div>
+	  		<div class="fl frame"><a href="###">自动化构建工具</a></div>-->
+	  	</div>
+	  	
+	  	<div class="htmlC wrap">
+	  		<h3 >内容介绍</h3>
+	  		<div class="clloction">
+		  		<ul class="fl htmlB">
+		  			<% infor.forEach(function(con,index){ if(index<6){%>
+		  			<li class="fl htmlD1">
+		  				<a href="###"><%- con.biaoti %></a>
+			  				<div class="cont"><%= con.con %></div>
+		  			</li>
+		  				<% }}) %>
+		  		</ul>
+		  		<div class="fr htmlD2">
+		  			<div class="show">
+		  				<dl class="fl">
+		  					<dt><img src="/images/zb_mongodb.jpg" alt="" /></dt>
+		  					<dd>mongoDB</dd>
+		  				</dl>
+		  				<dl class="fl">
+		  					<dt><img src="/images/zb_redhat.jpg" alt="" /></dt>
+		  					<dd>Linus</dd>
+		  				</dl>
+		  				<dl class="fl">
+		  					<dt><img src="/images/zb_mysql.jpg" alt="" /></dt>
+		  					<dd>MySQL</dd>
+		  				</dl>
+		  			</div>
+		  			
+		  			<ul class="list">
+		  				<% infor.forEach(function(con,index){ if(index>=6&&index<14){%>
+		  				<li><span></span><a href="###"><%- con.biaoti %></a></li>
+		  				<% }if(index>=14){%>
+		  					<li><span></span><a href="###"><%- con.cssName %></a></li>
+		  				<% }}) %>
+		  			</ul>
+		  		</div>
+	  		</div>
+	  	</div>
+  		<div class="footer">
+  			<div class="wrap">
+  				<p>
+  				<a href="###">关于博客</a>
+  				<a href="###">联系我们</a>
+  				<a href="###">发展历程</a>
+  				<a href="###">历史由来</a>
+  				<a href="###">网站定位</a>
+  				<a href="###">隐私声明</a>
+  			</p>
+  			© Copyright 2001 - 2017 blogchina.com, All Rights Reserved
+  			<br />
+  			京ICP证120511　京公网安备 11010802020321号
+  			</div>
+  			
+  		</div>
+  </body>
+</html>

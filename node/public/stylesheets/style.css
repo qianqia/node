@@ -1,0 +1,213 @@
+body {
+  
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+.fl{
+	float:left;
+}
+.fr{
+	float:right;
+}
+.wrap{
+	width:1024px;margin:0 auto;
+}
+li{
+	list-style: none;
+}
+*{
+	padding:0;margin:0;
+}
+a {
+  color: #00B7FF;
+}
+button{
+	font-size: 20px;
+}
+input[type='submit']{
+	font-weight: bold;
+}
+.bigbox{
+	min-height: 600px;height: auto!important;height: 600px;width:800px;
+}
+.box{
+	min-height: 60px;height: auto!important;height: 60px;border-bottom: 1px solid #f8a219;
+}
+.box:after{
+	clear: both;content: '.';height: 0;display: block;overflow: hidden;visibility: hidden;
+}
+.flor{
+	height: 25px;font:20px/25px "楷体";
+}
+.flor span{
+	color:#915833;
+}
+.box dl{
+	min-height: 40px;height: auto!important;height: 40px;padding-left: 10px;
+}
+.box dl dt{
+	height: 30px;line-height: 30px;
+}
+.box dl dd{
+	height: auto;line-height: 30px;
+}
+.box span{
+	color:#915833;font-weight: bold;
+}
+.liu{
+	height:50px;font:30px/50px "微软雅黑";text-align:center;background: #f0c133;
+	border-radius: 5px;word-spacing: 10px;
+}
+/********************head*********************************/
+.head{
+	border-bottom: 3px solid #a71f12;padding:0 0 1% 0;min-width: 1024px;
+}
+.head:after{
+	content: '.';height: 0;clear: both;display: block;overflow: hidden;visibility: hidden;
+}
+.headLeft{
+	margin: 22px 0 15px 10px;padding: 5px 20px 5px 0;border-right:2px solid #e3e3e3; 
+}
+.headMiddle{
+	margin: 20px 0 0 5px;
+}
+.headRight{
+	margin-top: 35px;margin-left: 60px;display: block;/*width: 260px;*/
+}
+.shar{
+	margin: 7px 50px 14px 7px;width: 19px;overflow: hidden;
+}
+.shar a{
+	height: 24px;padding-left: 28px;text-align: left;
+}
+.login button{
+	border: none;background: none;font-size: 18px;color:#c11111;
+}
+.btn{
+	width:110px;overflow: hidden;padding:0 10px;border:1px solid #ccc;height: 40px;
+	line-height: 40px;background: #f1f1f1;border-radius: 5px;
+}
+/**************************************nav************************/
+.nav1{
+	height: 46px;background: url(/images/head_bg.png);
+	/*border-bottom: 1px solid #dee2e6;*/min-width: 1024px;
+}
+.html,.css,.js,.frame{
+	width:15%;padding:9px 0 8px 0 ;text-align: center;
+}
+.nav1 a{
+	color:#000000;font-size: 18px;
+}
+.htmlC{
+	min-height:400px;height:auto!important;height:400px;min-width: 1024px;overflow: hidden;
+}
+.htmlC h3{
+	border-bottom: 2px solid #a42421;padding-bottom: 5px;text-indent: 10px;color:#aa2128;font-weight: bold;
+}
+.clloction{
+	width:100%;min-height:400px;height:auto!important;height:400px;
+	overflow: hidden;
+}
+.htmlC .htmlB{
+	width:700px;margin:0 10px;
+}
+.htmlC .htmlD1{
+	width:345px;border-right: 1px solid #ccc;padding:0 5px;
+	margin-top:20px;
+}
+.htmlD1 a{
+	display: block;font-size: 20px;color:#000;height: 40px;line-height: 20px;
+}
+.htmlC .htmlD1 a:hover{
+	color:#c50707;text-decoration: none;
+}
+.cont{
+	height: 140px;width:320px;font-size: 12px;
+	line-height: 20px;padding: 0 2px;margin-top:5px;background: #f1f1f1;
+	display: -webkit-box;-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;overflow: hidden;
+}
+.htmlD2{
+	width:300px;
+}
+.show{
+	width:300px;height: 100px;margin-top:20px;
+}
+.show dl{
+	height: 100px;width:100px;cursor: pointer;
+}
+.show dt{
+	border:1px solid #f1f1f1;width:80px;height: 80px;text-align:center;
+	line-height: 80px;
+}
+.show dt img{
+	display:inline-block;
+}
+.show  dd{
+	width:80px;text-align: center;height: 20px;
+}
+.list li{
+	width:290px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;padding: 0 5px;position: relative;text-indent: 10px;
+	height: 30px;line-height: 30px;
+}
+.list li:before{
+	border:3px solid #0c8409;position: absolute;width: 0; height: 0;
+	content: "";margin-top: 9px;display: block;
+}
+/***********************footer**************************/
+.footer{
+	color:#fff;height:120px;margin-top:30px;background: rgba(0,0,0,.8);
+	min-width: 1024px;
+}
+.footer div{
+	height: 100%;text-align: center;
+}
+.footer p{
+	text-align: center;padding:10px 0;
+}
+.footer p a{
+	line-height: 20px;color:#fff;padding: 10px;
+}
+.footer p a:hover{
+	color:#f24040;
+}
+/***************************登陆********************/
+
+/************login*****************/
+.loginhead{
+	height: 60px;min-width: 1024px;margin-top:20px;
+}
+.loginLeft{
+	border-right:1px solid #ccc;
+}
+.loginMiddle{
+	font: 20px/40px "微软雅黑";padding-left: 20px;color:#c61112;
+}
+.login1{
+	height: 485px;background: url(/images/main.jpg);
+}
+.loginCon{
+	width:100%;position: relative;
+}
+.loginShow{
+	position: absolute;top:50px;right:120px;background:rgba(0,0,0,.6);
+	height: 350px;width:300px;border-radius: 5px;padding: 0 30px;
+	overflow: hidden;
+}
+.loginShow p{
+	font-size: 25px;color:#fff;padding-top: 20px;text-indent: 70px;
+	font-weight: bold;
+}
+.loginShow form{
+	margin-top:30px;
+}
+.loginFooter{
+	text-align: center;min-width: 1024px;line-height: 20px;padding: 20px;
+}
+/****************************liyan****************/
+.welcome{
+	background: pink;min-width: 1024px;height: 80px;text-align: center;
+	line-height: 80px;
+}
+.welcome p{
+	font-size: 40px;padding-top:10px;color:#56a5f5;
+}

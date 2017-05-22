@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css" />
+  </head>
+  <body>
+  	<div class="wrap loginhead">
+	  			<div class="loginLeft fl">
+	  			<a href="###">
+	  				<img src="/images/h_hlogo2.png" alt="" />
+	  			</a>
+		  		</div>
+		  		<div class="loginMiddle fl">
+		  				每天五分钟 给思想加油
+		  		</div>
+		</div>
+		<div class="login1">
+		  		<div class="wrap loginCon">
+		  			<div class="loginShow">
+		  				<p>注册</p>
+					  	<form action="/users/use" method="post" role="form" style="width:200px" onsubmit="return check()">
+					  		<div class="input-group">
+							  				<span class="input-group-addon">用户名</span>
+							  				<input type="text" name='user' class="form-control" id="user1" placeholder="请填写用户名"/>
+							  		</div>
+							  			<br />
+							  		<div class="input-group">
+							  				<span class="input-group-addon">密码</span>
+							  				<input type="password" name='pwd' class="form-control" id="pwd1" placeholder="请填写密码"/>
+							  		</div>
+							  		<br />
+							  		<div class="input-group">
+							  				<span class="input-group-addon">邮箱</span>
+							  				<input type="email" name='email'class="form-control" id="email" placeholder="请填写正确邮箱地址"/>
+							  		</div>
+					  				<br />
+					    	<div><input type="submit" value="注册" class="btn btn-danger btn-block"/></div>
+					  	</form>
+					 </div>
+				</div>
+			</div>
+			<div class="loginFooter">
+					© Copyright 2001 - 2017 blogchina.com, All Rights Reserved
+					<br />
+					京ICP证120511　京公网安备 11010802020321号
+			</div>
+  </body>
+  <script type="text/javascript">
+  	function check(){
+		   var name = document.getElementById("user1").value;
+		   var pwd =document.getElementById("pwd1").value;
+		   var email =document.getElementById("email").value;
+		   if(name ==  null || name == ''){
+//		        alert("用户名不能为空");
+		        return false;
+		   }else if(pwd ==  null || pwd == ''){
+		   		return false;
+		   }else if(email ==  null || email == ''){
+		   		return false;
+		   }
+		   return true;
+		}
+  </script>
+</html>

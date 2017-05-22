@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css" />
+  	</head>
+  	<body>	
+  			<div class="wrap loginhead">
+	  			<div class="loginLeft fl">
+	  			<a href="###">
+	  				<img src="/images/h_hlogo2.png" alt="" />
+	  			</a>
+		  		</div>
+		  		<div class="loginMiddle fl">
+		  				每天五分钟 给思想加油
+		  		</div>
+	  		</div>
+	  		<div class="login1">
+		  		<div class="wrap loginCon">
+		  			<div class="loginShow">
+		  				<p>登陆</p>
+			  			<form action="/users/check" method="post" role="form" style="width:220px">
+				  		
+				  		<div class="input-group">
+				  				<span class="input-group-addon">用户名</span>
+				  				<input type="text" name='user' class="form-control" placeholder="用户名"/>
+				  		</div>
+				  			<br />
+				  			
+				  		<div class="input-group">
+				  				<span class="input-group-addon">密码</span>
+				  				<input type="password" name='pwd' class="form-control" placeholder="密码"/>
+				  		</div>
+				  			<br />
+				  		
+				  		
+				    	<div style="text-align: center;"><input type="submit" value="登陆" class="btn btn-danger btn-block"/></div>
+						</form>
+						<%- num %>
+		  			</div>
+		  		</div>
+				</div>
+				<div class="loginFooter">
+					© Copyright 2001 - 2017 blogchina.com, All Rights Reserved
+					<br />
+					京ICP证120511　京公网安备 11010802020321号
+			</div>
+	</body>
+</html>

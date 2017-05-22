@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+  	<div class="bigbox">
+		<h3 class="liu">留言板</h3>
+		<% item.forEach(function(cont,index){ %>
+			<div class="box">
+				<p class="flor"><span><%- use %>:</span>第<%- index+1 %>楼</p>
+				<dl>
+					<dt><span>标题：</span><%- cont.biaoti %></dt>
+					<dd><%- cont.con %></dd>
+				</dl>
+			</div>
+		<% }) %>
+	</div>
+
+  </body>
+</html>
